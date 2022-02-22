@@ -4,6 +4,8 @@ import YummeScreenshot2 from "./Yumme/4 - volg recept.png";
 import YummeScreenshot3 from "./Yumme/4 - deel recept.png";
 import YummeScreenshot4 from "./Yumme/4 - alternatief voor recept.png";
 import YummeScreenshot5 from "./Yumme/4 - voeg toe aan recept.png";
+import { ReactComponent as Modereren } from "./Bubbles/i-modereren.svg";
+import { ReactComponent as Verbonden } from "./Bubbles/i-verbonden.svg";
 import Cameras from "./Camera/cameras.jpg";
 import UX from "./Camera/voorbeeld+ux.png";
 
@@ -99,8 +101,8 @@ export default function Blob() {
     return (
       <>
         <h1>Fysieke Chatroom in de openbare ruimte</h1>
-        <article>Hoe kunnen we </article>
         <p className="description">
+        Hoe kunnen we de oude chatroom (en zijn glorie) vertalen naar de publieke ruimte?   <br /><br />
         Foto door Marche via re-how.
           <img
             width="100%"
@@ -113,10 +115,9 @@ export default function Blob() {
   }
   if (invoiceId === "modereren") {
     return (
-      <>
-        <h1>Hoe zou jij een gedeelde online plek modereren? </h1>
-        <article>AANVULLEN</article>
-      </>
+      <div style={{width:"70vh", margin: "8vh auto"}}>
+        <a href="mailto:finlay.degrauwe@student.luca-arts.be"><Modereren /><small style={{textAlign:'center',width:"100%",display:"inline-block"}}>Klik op de bubbel om contact op te nemen via email</small></a>
+      </div>
     );
   }
   if (invoiceId === "geert") {
@@ -313,12 +314,9 @@ export default function Blob() {
   }
   if (invoiceId === "verbonden") {
     return (
-      <>
-        <h1>
-          Op welke moment voelde jij je digitaal verbonden tot iets groter?
-        </h1>
-        <article>AANVULLEN</article>
-      </>
+      <div style={{width:"70vh", margin: "8vh auto"}}>
+        <a href="mailto:finlay.degrauwe@student.luca-arts.be"><Verbonden /><small style={{textAlign:'center',width:"100%",display:"inline-block"}}>Klik op de bubbel om contact op te nemen via email</small></a>
+      </div>
     );
   }
   if (invoiceId === "commons") {
