@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Cooper Black';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cooper Black'), url('https://fonts.cdnfonts.com/s/14988/COOPBL.woff') format('woff');
+}
+
 .header {
   margin: 0;
   padding: 20px 20px 20px 0px;

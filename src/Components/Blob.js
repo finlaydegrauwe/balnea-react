@@ -99,7 +99,15 @@ export default function Blob() {
     return (
       <>
         <h1>Fysieke Chatroom in de openbare ruimte</h1>
-        <article>AANVULLEN</article>
+        <article>Hoe kunnen we </article>
+        <p className="description">
+        Foto door Marche via re-how.
+          <img
+            width="100%"
+            alt="open space"
+            src="https://re-how.net/wp-content/uploads/2021/04/d40949-2-631287-1.jpg"
+          />
+        </p>
       </>
     );
   }
