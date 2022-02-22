@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+.header {
+  margin: 0;
+  padding: 20px 20px 20px 0px;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Cooper Black', sans-serif;
+  margin: 2em 10vw 0 10vw;
+  text-transform: uppercase;
+  word-wrap: break-word;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: 'Cooper Black', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  position: absolute;
+  z-index: 3;
+  padding: 2rem 5rem 0 4rem;
+  width: 20vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  float: left;
+  padding: 0px 30px;
+  line-height: 1.5em;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+table{
+  margin: 2em 10vw;
+  border: 3px solid;
+  border-collapse: collapse;
+}
+
+.description{
+  margin: 2em 10vw;
+  line-height: 1.5em;
+}
+
+th, td {
+  border: 3px solid;
+  padding: 0.5em;
+}
+
+article li{
+  list-style-type: disc;
+}
+
+.blobs {
+  display: grid;
+  margin: auto;
+  width: 88vw;
+  grid-template-columns: repeat(2, 40vw);
+  grid-template-rows: repeat(7, 40vw);
+  margin-top: 20vw;
+  gap: 6vw 6vw;
+}
+
+svg {
+  transition-duration: 2s;
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg:hover {
+  width: 115%;
+  height: 115%;
+  margin: -5% 0 0 -5%;
+}
+
+video {
+  width: 100%;
+  border-radius: 60% 70% 60% 80%;
+}
+
+.camera {
+  position: absolute;
+  width: 25 vw;
+}
+
+.camera:hover{
+  width: inherit !important;
+  height: inherit !important;
+}
+
+g:hover {
+  cursor: pointer;
+}
+
+.blobs a:nth-child(2n + 1) {
+  margin-top: -40vw;
+}
+
+article {
+  margin: 2em 10vw;
+  columns: 2;
+  text-align: justify;
+  column-gap: 6vw;
+  line-height: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .blobs {
+    display: block;
+    margin: 0 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .blobber {
+    height: 80vw;
+    margin-bottom: 30px;
   }
+
+  .blobs a:nth-child(2n + 1) {
+    margin-top: 0px;
+  }
+
+  svg:hover {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+  }
+
+  article {
+    columns: 1;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  /* For big displays: */
+  .App {
+    gap: 12vw;
+  }
+
+  .blobs {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(5, 25vw);
+    margin-top: 10vw;
+  }
+
+  .blobber {
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+
+  .blobs a:nth-child(2n + 1) {
+    margin-top: 0px;
+  }
+
+  .blobs a:nth-child(3n + 1) {
+    margin-top: -12vw;
+  }
+
+  .blobs a:nth-child(3n + 3) {
+    margin-top: -4vw;
+  }
+
+  article {
+    columns: 3;
+  }
+}
+
+.blobber {
+  overflow-wrap: break-word;
 }
